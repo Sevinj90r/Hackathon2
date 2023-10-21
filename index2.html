@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn English with game</title>
+  <style>
+
+  *{
+    padding: 0;
+    margin: 0;
+  }
+    main{
+      background-image: url(images/background.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 650px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .back-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      width: 900px;
+      border: 10px solid rgb(165, 165, 165);
+      height: 98%;
+      border-radius: 30px;
+    }
+    .container{
+      background-image: url(images/container.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 800px;
+      border: 4px double rgb(165, 165, 165);
+      height: 90%;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .titleImg{
+      width: 400px;
+    }
+    .startbtn{
+      width: 300px;
+      height: 100px;
+      color:white;
+      font-weight: bold;
+      font-size: 60px;
+      border-radius: 30px;
+      margin: 20px;
+      background-color: rgb(253, 113, 113);
+      border: none;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .startbtn:hover{
+      background-color: rgb(240, 185, 185);
+    }
+    .part1,.part2{
+      width: 100%;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .part2{
+      flex-direction: column;
+    }
+    .abtn,.bbtn,.cbtn{
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      border-radius: 30px;
+      margin: 20px;
+      border: 2px solid gray;
+      transition: 1s;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .quest{
+      width: 500px;
+      height: 80px;
+      background-color: lightblue;
+      border-radius: 30px;
+      margin: 20px;
+      border: 2px solid gray;
+    }
+    .countQw{
+      width: 200px;
+      height: 80px;
+      background-color: lightblue;
+      border-radius: 30px;
+      margin: 20px;
+      border: 2px solid gray;
+    }
+    .aimg,.bimg,.cimg{
+      width: 150px;
+      height: 150px;
+     
+    }
+
+    .abtn:hover,.bbtn:hover,.cbtn:hover{
+      background-color: white;
+      width: 201px;
+      height: 201px;
+      transform: scale(1.2);
+    }
+  
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="back-container">
+      <div class="container">
+        <div class="part1">
+          <div class="abtn">
+            <img class="aimg" src="images/car.png" alt="">
+          </div>
+          <div class="bbtn">
+            <img class="bimg" src="images/bike.png" alt="">
+          </div>
+          <div class="cbtn">
+            <img class="cimg" src="images/tram.png" alt="">
+          </div>
+        </div>
+        <div class="part2">
+          <div class="quest"></div>
+          <div class="countQw"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
