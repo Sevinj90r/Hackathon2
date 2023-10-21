@@ -10,13 +10,14 @@
     padding: 0;
     margin: 0;
   }
+  
     main{
       background-image: url(images/background.png);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       width: 100%;
-      height: 650px;
+      height: 580px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -44,6 +45,12 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      opacity: 1;
+      transition-duration: 0.7s;
+    
+    }
+    .container.fade{
+      opacity: 0;
     }
     .titleImg{
       width: 400px;
@@ -80,14 +87,14 @@
       border-radius: 30px;
       margin: 20px;
       border: 2px solid gray;
-      transition: 1s;
       cursor: pointer;
       padding: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
     }
-    .quest{
+    .quest,.retry{
       width: 500px;
       height: 80px;
       background-color: lightblue;
@@ -106,28 +113,74 @@
       border-radius: 30px;
       margin: 20px;
       border: 2px solid gray;
+      font-size: 60px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bold;
+      text-align: center
     }
 
     .abtn:hover,.bbtn:hover,.cbtn:hover{
       background-color: white;
       width: 201px;
       height: 201px;
-      transform: scale(1.2);
     }
     .right{
       background-color: green;
-      border: non;
+      border: 2px double gray;
       border-radius: 50%;
       width: 50px;
       height: 50px;
+      position: absolute;
+      right: 10px;
+      bottom: 1px;
+      visibility: hidden;
+    }
+    .wrong{
+      background-color: red;
+      border: 2px double gray;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      right: 10px;
+      bottom: 1px;
+      visibility: hidden;
     }
     .aimg,.bimg,.cimg{
       width: 200px;
       height: 150px;
     }
+    .end,.result{
+      text-align: center;
+      font-size: 100px;
+      color: red;
+      width: 100%;
+      height: 100%;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .retry{
+      width: 400px;
+      height: 130px;
+      background-color: rgb(253, 213, 137);
+      border-radius: 30px;
+      margin: 20px;
+      border: 2px solid gray;
+      font-size: 60px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bold;
+      text-align: center;
+    }
+    .retry:hover{
+      background-color: rgb(255, 238, 207);
+    }
+    
   </style>
 </head>
 <body>
+
 
   <main>
     <div class="back-container">

@@ -46,26 +46,7 @@ app.get('/',(req,res)=>{
     res.send(data)
   });
 });
-// app.get('/question',(req,res)=>{
-//   // let firstFsRead = new Promise((resolve,rejects)=>{
-//   fs.readFile('index2.html','utf8',(err,data)=>{
-//     res.send(data)
-//   });
-// });
 
-// let dbDisplay = 
-//   db("questions")
-//   .select('qw_content');
-
-//   Promise.all([firstFsRead, dbDisplay])
-//     .then(([data, el]) => {
-//       res.send(`${data}, ${JSON.stringify(el)}`);
-//     })
-//     .catch(err => {
-//       console.log(err);
-//       res.status(500).send('Something went wrong');
-//     });
-// });
 
 
 app.get('/question',(req,res)=>{
